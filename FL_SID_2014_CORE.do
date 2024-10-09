@@ -1,0 +1,495 @@
+clear
+infix    3 firstlineoffile                       ///
+ long   AGE                                1  -    3   ///  
+ long   AHOUR                              4  -    7   ///  
+ long   ATYPE                              8  -    9   ///  
+ long   AWEEKEND                          10  -   11   ///  
+ long   DHOUR                             12  -   15   ///  
+ long   DIED                              16  -   17   ///  
+ long   DISPUB04                          18  -   19   ///  
+ long   DISPUNIFORM                       20  -   21   ///  
+ str  DISP_X                            22  -   23   ///  
+ long   DQTR                              24  -   25   ///  
+ long   DRG                               26  -   28   ///  
+ long   DRG24                             29  -   31   ///  
+ long   DRGVER                            32  -   33   ///  
+ long   DRG_NoPOA                         34  -   36   ///  
+ str  DSHOSPID                          37  -   53   ///  
+ str  DX1                               54  -   60   ///  
+ str  DX2                               61  -   67   ///  
+ str  DX3                               68  -   74   ///  
+ str  DX4                               75  -   81   ///  
+ str  DX5                               82  -   88   ///  
+ str  DX6                               89  -   95   ///  
+ str  DX7                               96  -  102   ///  
+ str  DX8                              103  -  109   ///  
+ str  DX9                              110  -  116   ///  
+ str  DX10                             117  -  123   ///  
+ str  DX11                             124  -  130   ///  
+ str  DX12                             131  -  137   ///  
+ str  DX13                             138  -  144   ///  
+ str  DX14                             145  -  151   ///  
+ str  DX15                             152  -  158   ///  
+ str  DX16                             159  -  165   ///  
+ str  DX17                             166  -  172   ///  
+ str  DX18                             173  -  179   ///  
+ str  DX19                             180  -  186   ///  
+ str  DX20                             187  -  193   ///  
+ str  DX21                             194  -  200   ///  
+ str  DX22                             201  -  207   ///  
+ str  DX23                             208  -  214   ///  
+ str  DX24                             215  -  221   ///  
+ str  DX25                             222  -  228   ///  
+ str  DX26                             229  -  235   ///  
+ str  DX27                             236  -  242   ///  
+ str  DX28                             243  -  249   ///  
+ str  DX29                             250  -  256   ///  
+ str  DX30                             257  -  263   ///  
+ str  DX31                             264  -  270   ///  
+ long   DXCCS1                           271  -  274   ///  
+ long   DXCCS2                           275  -  278   ///  
+ long   DXCCS3                           279  -  282   ///  
+ long   DXCCS4                           283  -  286   ///  
+ long   DXCCS5                           287  -  290   ///  
+ long   DXCCS6                           291  -  294   ///  
+ long   DXCCS7                           295  -  298   ///  
+ long   DXCCS8                           299  -  302   ///  
+ long   DXCCS9                           303  -  306   ///  
+ long   DXCCS10                          307  -  310   ///  
+ long   DXCCS11                          311  -  314   ///  
+ long   DXCCS12                          315  -  318   ///  
+ long   DXCCS13                          319  -  322   ///  
+ long   DXCCS14                          323  -  326   ///  
+ long   DXCCS15                          327  -  330   ///  
+ long   DXCCS16                          331  -  334   ///  
+ long   DXCCS17                          335  -  338   ///  
+ long   DXCCS18                          339  -  342   ///  
+ long   DXCCS19                          343  -  346   ///  
+ long   DXCCS20                          347  -  350   ///  
+ long   DXCCS21                          351  -  354   ///  
+ long   DXCCS22                          355  -  358   ///  
+ long   DXCCS23                          359  -  362   ///  
+ long   DXCCS24                          363  -  366   ///  
+ long   DXCCS25                          367  -  370   ///  
+ long   DXCCS26                          371  -  374   ///  
+ long   DXCCS27                          375  -  378   ///  
+ long   DXCCS28                          379  -  382   ///  
+ long   DXCCS29                          383  -  386   ///  
+ long   DXCCS30                          387  -  390   ///  
+ long   DXCCS31                          391  -  394   ///  
+ str  DXPOA1                           395  -  395   ///  
+ str  DXPOA2                           396  -  396   ///  
+ str  DXPOA3                           397  -  397   ///  
+ str  DXPOA4                           398  -  398   ///  
+ str  DXPOA5                           399  -  399   ///  
+ str  DXPOA6                           400  -  400   ///  
+ str  DXPOA7                           401  -  401   ///  
+ str  DXPOA8                           402  -  402   ///  
+ str  DXPOA9                           403  -  403   ///  
+ str  DXPOA10                          404  -  404   ///  
+ str  DXPOA11                          405  -  405   ///  
+ str  DXPOA12                          406  -  406   ///  
+ str  DXPOA13                          407  -  407   ///  
+ str  DXPOA14                          408  -  408   ///  
+ str  DXPOA15                          409  -  409   ///  
+ str  DXPOA16                          410  -  410   ///  
+ str  DXPOA17                          411  -  411   ///  
+ str  DXPOA18                          412  -  412   ///  
+ str  DXPOA19                          413  -  413   ///  
+ str  DXPOA20                          414  -  414   ///  
+ str  DXPOA21                          415  -  415   ///  
+ str  DXPOA22                          416  -  416   ///  
+ str  DXPOA23                          417  -  417   ///  
+ str  DXPOA24                          418  -  418   ///  
+ str  DXPOA25                          419  -  419   ///  
+ str  DXPOA26                          420  -  420   ///  
+ str  DXPOA27                          421  -  421   ///  
+ str  DXPOA28                          422  -  422   ///  
+ str  DXPOA29                          423  -  423   ///  
+ str  DXPOA30                          424  -  424   ///  
+ str  DXPOA31                          425  -  425   ///  
+ long   DXVER                            426  -  428   ///  
+ str  DX_Admitting                     429  -  435   ///  
+ long   DaysToEvent                      436  -  441   ///  
+ str  ECODE1                           442  -  448   ///  
+ str  ECODE2                           449  -  455   ///  
+ str  ECODE3                           456  -  462   ///  
+ long   EDHOUR                           463  -  466   ///  
+ long   E_CCS1                           467  -  470   ///  
+ long   E_CCS2                           471  -  474   ///  
+ long   E_CCS3                           475  -  478   ///  
+ str  E_POA1                           479  -  479   ///  
+ str  E_POA2                           480  -  480   ///  
+ str  E_POA3                           481  -  481   ///  
+ long   FEMALE                           482  -  483   ///  
+ long   HCUP_ED                          484  -  485   ///  
+ long   HCUP_OS                          486  -  487   ///  
+ str  HISPANIC_X                       488  -  495   ///  
+ long   HOSPBRTH                         496  -  498   ///  
+ str  HOSPST                           499  -  500   ///  
+ long   Homeless                         501  -  502   ///  
+ long   HospitalUnit                     503  -  504   ///  
+ double   KEY                              505  -  519   ///  
+ long   LOS                              520  -  524   ///  
+ long   LOS_X                            525  -  530   ///  
+ long   MDC                              531  -  532   ///  
+ long   MDC24                            533  -  534   ///  
+ long   MDC_NoPOA                        535  -  536   ///  
+ long   MDNUM1_R                         537  -  545   ///  
+ long   MDNUM2_R                         546  -  554   ///  
+ long   MDNUM3_R                         555  -  563   ///  
+ long   MEDINCSTQ                        564  -  565   ///  
+ long   NCHRONIC                         566  -  568   ///  
+ long   NDX                              569  -  571   ///  
+ long   NECODE                           572  -  573   ///  
+ long   NEOMAT                           574  -  575   ///  
+ long   NPR                              576  -  578   ///  
+ long   ORPROC                           579  -  580   ///  
+ str  P7EDSRC_X                        581  -  582   ///  
+ long   PAY1                             583  -  584   ///  
+ str  PAY1_X                           585  -  585   ///  
+ long   PL_CBSA                          586  -  588   ///  
+ long   PL_NCHS                          589  -  590   ///  
+ long   PL_RUCC                          591  -  592   ///  
+ long   PL_UIC                           593  -  594   ///  
+ long   PL_UR_CAT4                       595  -  596   ///  
+ long   POA_Disch_Edit1                  597  -  598   ///  
+ long   POA_Disch_Edit2                  599  -  600   ///  
+ long   POA_Hosp_Edit1                   601  -  602   ///  
+ long   POA_Hosp_Edit2                   603  -  604   ///  
+ long   POA_Hosp_Edit3                   605  -  606   ///  
+ long   POA_Hosp_Edit3_Value             607  -  614   ///  
+ str  PR1                              615  -  621   ///  
+ str  PR2                              622  -  628   ///  
+ str  PR3                              629  -  635   ///  
+ str  PR4                              636  -  642   ///  
+ str  PR5                              643  -  649   ///  
+ str  PR6                              650  -  656   ///  
+ str  PR7                              657  -  663   ///  
+ str  PR8                              664  -  670   ///  
+ str  PR9                              671  -  677   ///  
+ str  PR10                             678  -  684   ///  
+ str  PR11                             685  -  691   ///  
+ str  PR12                             692  -  698   ///  
+ str  PR13                             699  -  705   ///  
+ str  PR14                             706  -  712   ///  
+ str  PR15                             713  -  719   ///  
+ str  PR16                             720  -  726   ///  
+ str  PR17                             727  -  733   ///  
+ str  PR18                             734  -  740   ///  
+ str  PR19                             741  -  747   ///  
+ str  PR20                             748  -  754   ///  
+ str  PR21                             755  -  761   ///  
+ str  PR22                             762  -  768   ///  
+ str  PR23                             769  -  775   ///  
+ str  PR24                             776  -  782   ///  
+ str  PR25                             783  -  789   ///  
+ str  PR26                             790  -  796   ///  
+ str  PR27                             797  -  803   ///  
+ str  PR28                             804  -  810   ///  
+ str  PR29                             811  -  817   ///  
+ str  PR30                             818  -  824   ///  
+ str  PR31                             825  -  831   ///  
+ long   PRCCS1                           832  -  834   ///  
+ long   PRCCS2                           835  -  837   ///  
+ long   PRCCS3                           838  -  840   ///  
+ long   PRCCS4                           841  -  843   ///  
+ long   PRCCS5                           844  -  846   ///  
+ long   PRCCS6                           847  -  849   ///  
+ long   PRCCS7                           850  -  852   ///  
+ long   PRCCS8                           853  -  855   ///  
+ long   PRCCS9                           856  -  858   ///  
+ long   PRCCS10                          859  -  861   ///  
+ long   PRCCS11                          862  -  864   ///  
+ long   PRCCS12                          865  -  867   ///  
+ long   PRCCS13                          868  -  870   ///  
+ long   PRCCS14                          871  -  873   ///  
+ long   PRCCS15                          874  -  876   ///  
+ long   PRCCS16                          877  -  879   ///  
+ long   PRCCS17                          880  -  882   ///  
+ long   PRCCS18                          883  -  885   ///  
+ long   PRCCS19                          886  -  888   ///  
+ long   PRCCS20                          889  -  891   ///  
+ long   PRCCS21                          892  -  894   ///  
+ long   PRCCS22                          895  -  897   ///  
+ long   PRCCS23                          898  -  900   ///  
+ long   PRCCS24                          901  -  903   ///  
+ long   PRCCS25                          904  -  906   ///  
+ long   PRCCS26                          907  -  909   ///  
+ long   PRCCS27                          910  -  912   ///  
+ long   PRCCS28                          913  -  915   ///  
+ long   PRCCS29                          916  -  918   ///  
+ long   PRCCS30                          919  -  921   ///  
+ long   PRCCS31                          922  -  924   ///  
+ long   PRDAY1                           925  -  929   ///  
+ long   PRDAY2                           930  -  934   ///  
+ long   PRDAY3                           935  -  939   ///  
+ long   PRDAY4                           940  -  944   ///  
+ long   PRDAY5                           945  -  949   ///  
+ long   PRDAY6                           950  -  954   ///  
+ long   PRDAY7                           955  -  959   ///  
+ long   PRDAY8                           960  -  964   ///  
+ long   PRDAY9                           965  -  969   ///  
+ long   PRDAY10                          970  -  974   ///  
+ long   PRDAY11                          975  -  979   ///  
+ long   PRDAY12                          980  -  984   ///  
+ long   PRDAY13                          985  -  989   ///  
+ long   PRDAY14                          990  -  994   ///  
+ long   PRDAY15                          995  -  999   ///  
+ long   PRDAY16                         1000  - 1004   ///  
+ long   PRDAY17                         1005  - 1009   ///  
+ long   PRDAY18                         1010  - 1014   ///  
+ long   PRDAY19                         1015  - 1019   ///  
+ long   PRDAY20                         1020  - 1024   ///  
+ long   PRDAY21                         1025  - 1029   ///  
+ long   PRDAY22                         1030  - 1034   ///  
+ long   PRDAY23                         1035  - 1039   ///  
+ long   PRDAY24                         1040  - 1044   ///  
+ long   PRDAY25                         1045  - 1049   ///  
+ long   PRDAY26                         1050  - 1054   ///  
+ long   PRDAY27                         1055  - 1059   ///  
+ long   PRDAY28                         1060  - 1064   ///  
+ long   PRDAY29                         1065  - 1069   ///  
+ long   PRDAY30                         1070  - 1074   ///  
+ long   PRDAY31                         1075  - 1079   ///  
+ long   PROCTYPE                        1080  - 1082   ///  
+ long   PRVER                           1083  - 1085   ///  
+ str  PSTATE                          1086  - 1087   ///  
+ long   PSTCO2                          1088  - 1092   ///  
+ str  PointOfOriginUB04               1093  - 1093   ///  
+ str  PointOfOrigin_X                 1094  - 1095   ///  
+ long   RACE                            1096  - 1097   ///  
+ str  RACE_X                          1098  - 1098   ///  
+ long   SERVICELINE                     1099  - 1100   ///  
+ long   TOTCHG                          1101  - 1110   ///  
+ long   TOTCHG_X                        1111  - 1125   ///  
+ long   TRAN_IN                         1126  - 1127   ///  
+ long   TRAN_OUT                        1128  - 1129   ///  
+ long   VisitLink                       1130  - 1138   ///  
+ long   YEAR                            1139  - 1142   ///  
+ str  ZIP                             1143  - 1147   ///  
+ str  ZIP3                            1148  - 1150   ///  
+ long   ZIPINC_QRTL                     1151  - 1153   ///  
+ long   EDYEAR                          1154  - 1157   ///  
+ long   PRYEAR1                         1158  - 1161   ///  
+ long   PRYEAR2                         1162  - 1165   ///  
+ long   PRYEAR3                         1166  - 1169   ///  
+ long   PRYEAR4                         1170  - 1173   ///  
+ long   PRYEAR5                         1174  - 1177   ///  
+ long   PRYEAR6                         1178  - 1181   ///  
+ long   PRYEAR7                         1182  - 1185   ///  
+ long   PRYEAR8                         1186  - 1189   ///  
+ long   PRYEAR9                         1190  - 1193   ///  
+ long   PRYEAR10                        1194  - 1197   ///  
+ long   PRYEAR11                        1198  - 1201   ///  
+ long   PRYEAR12                        1202  - 1205   ///  
+ long   PRYEAR13                        1206  - 1209   ///  
+ long   PRYEAR14                        1210  - 1213   ///  
+ long   PRYEAR15                        1214  - 1217   ///  
+ long   PRYEAR16                        1218  - 1221   ///  
+ long   PRYEAR17                        1222  - 1225   ///  
+ long   PRYEAR18                        1226  - 1229   ///  
+ long   PRYEAR19                        1230  - 1233   ///  
+ long   PRYEAR20                        1234  - 1237   ///  
+ long   PRYEAR21                        1238  - 1241   ///  
+ long   PRYEAR22                        1242  - 1245   ///  
+ long   PRYEAR23                        1246  - 1249   ///  
+ long   PRYEAR24                        1250  - 1253   ///  
+ long   PRYEAR25                        1254  - 1257   ///  
+ long   PRYEAR26                        1258  - 1261   ///  
+ long   PRYEAR27                        1262  - 1265   ///  
+ long   PRYEAR28                        1266  - 1269   ///  
+ long   PRYEAR29                        1270  - 1273   ///  
+ long   PRYEAR30                        1274  - 1277   ///  
+ long   PRYEAR31                        1278  - 1281   ///  
+ using  "$data/FL_SID_2014_CORE.ASC"
+ 
+ 
+ recode AGE (-99 -88 -66 -55=.)
+recode AHOUR (-999 -888 -666 -555=.)
+recode ATYPE (-9 -8 -6 -5=.)
+recode AWEEKEND (-9 -8 -6 -5=.)
+recode DHOUR (-999 -888 -666 -555=.)
+recode DIED (-9 -8 -6 -5=.)
+recode DISPUB04 (-9 -8 -6 -5=.)
+recode DISPUNIFORM (-9 -8 -6 -5=.)
+recode DQTR (-9 -8 -6 -5=.)
+recode DRG (-99 -88 -66 -55=.)
+recode DRG24 (-99 -88 -66 -55=.)
+recode DRGVER (-9 -8 -6 -5=.)
+recode DRG_NoPOA (-99 -88 -66 -55=.)
+recode DXCCS1 (-999 -888 -666 -555=.)
+recode DXCCS2 (-999 -888 -666 -555=.)
+recode DXCCS3 (-999 -888 -666 -555=.)
+recode DXCCS4 (-999 -888 -666 -555=.)
+recode DXCCS5 (-999 -888 -666 -555=.)
+recode DXCCS6 (-999 -888 -666 -555=.)
+recode DXCCS7 (-999 -888 -666 -555=.)
+recode DXCCS8 (-999 -888 -666 -555=.)
+recode DXCCS9 (-999 -888 -666 -555=.)
+recode DXCCS10 (-999 -888 -666 -555=.)
+recode DXCCS11 (-999 -888 -666 -555=.)
+recode DXCCS12 (-999 -888 -666 -555=.)
+recode DXCCS13 (-999 -888 -666 -555=.)
+recode DXCCS14 (-999 -888 -666 -555=.)
+recode DXCCS15 (-999 -888 -666 -555=.)
+recode DXCCS16 (-999 -888 -666 -555=.)
+recode DXCCS17 (-999 -888 -666 -555=.)
+recode DXCCS18 (-999 -888 -666 -555=.)
+recode DXCCS19 (-999 -888 -666 -555=.)
+recode DXCCS20 (-999 -888 -666 -555=.)
+recode DXCCS21 (-999 -888 -666 -555=.)
+recode DXCCS22 (-999 -888 -666 -555=.)
+recode DXCCS23 (-999 -888 -666 -555=.)
+recode DXCCS24 (-999 -888 -666 -555=.)
+recode DXCCS25 (-999 -888 -666 -555=.)
+recode DXCCS26 (-999 -888 -666 -555=.)
+recode DXCCS27 (-999 -888 -666 -555=.)
+recode DXCCS28 (-999 -888 -666 -555=.)
+recode DXCCS29 (-999 -888 -666 -555=.)
+recode DXCCS30 (-999 -888 -666 -555=.)
+recode DXCCS31 (-999 -888 -666 -555=.)
+recode DXVER (-99 -88 -66 -55=.)
+recode DaysToEvent (-99999 -88888 -66666 -55555=.)
+recode EDHOUR (-999 -888 -666 -555=.)
+recode E_CCS1 (-999 -888 -666 -555=.)
+recode E_CCS2 (-999 -888 -666 -555=.)
+recode E_CCS3 (-999 -888 -666 -555=.)
+recode FEMALE (-9 -8 -6 -5=.)
+recode HCUP_ED (-9 -8 -6 -5=.)
+recode HCUP_OS (-9 -8 -6 -5=.)
+recode HOSPBRTH (-99 -88 -66 -55=.)
+recode Homeless (-9 -8 -6 -5=.)
+recode HospitalUnit (-9 -8 -6 -5=.)
+recode LOS (-9999 -8888 -6666 -5555=.)
+recode LOS_X (-99999 -88888 -66666 -55555=.)
+recode MDC (-9 -8 -6 -5=.)
+recode MDC24 (-9 -8 -6 -5=.)
+recode MDC_NoPOA (-9 -8 -6 -5=.)
+recode MDNUM1_R (-99999999 -88888888 -66666666 -55555555=.)
+recode MDNUM2_R (-99999999 -88888888 -66666666 -55555555=.)
+recode MDNUM3_R (-99999999 -88888888 -66666666 -55555555=.)
+recode MEDINCSTQ (-9 -8 -6 -5=.)
+recode NCHRONIC (-99 -88 -66 -55=.)
+recode NDX (-99 -88 -66 -55=.)
+recode NECODE (-9 -8 -6 -5=.)
+recode NEOMAT (-9 -8 -6 -5=.)
+recode NPR (-99 -88 -66 -55=.)
+recode ORPROC (-9 -8 -6 -5=.)
+recode PAY1 (-9 -8 -6 -5=.)
+recode PL_CBSA (-99 -88 -66 -55=.)
+recode PL_NCHS (-9 -8 -6 -5=.)
+recode PL_RUCC (-9 -8 -6 -5=.)
+recode PL_UIC (-9 -8 -6 -5=.)
+recode PL_UR_CAT4 (-9 -8 -6 -5=.)
+recode POA_Disch_Edit1 (-9 -8 -6 -5=.)
+recode POA_Disch_Edit2 (-9 -8 -6 -5=.)
+recode POA_Hosp_Edit1 (-9 -8 -6 -5=.)
+recode POA_Hosp_Edit2 (-9 -8 -6 -5=.)
+recode POA_Hosp_Edit3 (-9 -8 -6 -5=.)
+recode POA_Hosp_Edit3_Value (-9999.99 -8888.88 -6666.66 -5555.55=.)
+recode PRCCS1 (-99 -88 -66 -55=.)
+recode PRCCS2 (-99 -88 -66 -55=.)
+recode PRCCS3 (-99 -88 -66 -55=.)
+recode PRCCS4 (-99 -88 -66 -55=.)
+recode PRCCS5 (-99 -88 -66 -55=.)
+recode PRCCS6 (-99 -88 -66 -55=.)
+recode PRCCS7 (-99 -88 -66 -55=.)
+recode PRCCS8 (-99 -88 -66 -55=.)
+recode PRCCS9 (-99 -88 -66 -55=.)
+recode PRCCS10 (-99 -88 -66 -55=.)
+recode PRCCS11 (-99 -88 -66 -55=.)
+recode PRCCS12 (-99 -88 -66 -55=.)
+recode PRCCS13 (-99 -88 -66 -55=.)
+recode PRCCS14 (-99 -88 -66 -55=.)
+recode PRCCS15 (-99 -88 -66 -55=.)
+recode PRCCS16 (-99 -88 -66 -55=.)
+recode PRCCS17 (-99 -88 -66 -55=.)
+recode PRCCS18 (-99 -88 -66 -55=.)
+recode PRCCS19 (-99 -88 -66 -55=.)
+recode PRCCS20 (-99 -88 -66 -55=.)
+recode PRCCS21 (-99 -88 -66 -55=.)
+recode PRCCS22 (-99 -88 -66 -55=.)
+recode PRCCS23 (-99 -88 -66 -55=.)
+recode PRCCS24 (-99 -88 -66 -55=.)
+recode PRCCS25 (-99 -88 -66 -55=.)
+recode PRCCS26 (-99 -88 -66 -55=.)
+recode PRCCS27 (-99 -88 -66 -55=.)
+recode PRCCS28 (-99 -88 -66 -55=.)
+recode PRCCS29 (-99 -88 -66 -55=.)
+recode PRCCS30 (-99 -88 -66 -55=.)
+recode PRCCS31 (-99 -88 -66 -55=.)
+recode PRDAY1 (-9999 -8888 -6666 -5555=.)
+recode PRDAY2 (-9999 -8888 -6666 -5555=.)
+recode PRDAY3 (-9999 -8888 -6666 -5555=.)
+recode PRDAY4 (-9999 -8888 -6666 -5555=.)
+recode PRDAY5 (-9999 -8888 -6666 -5555=.)
+recode PRDAY6 (-9999 -8888 -6666 -5555=.)
+recode PRDAY7 (-9999 -8888 -6666 -5555=.)
+recode PRDAY8 (-9999 -8888 -6666 -5555=.)
+recode PRDAY9 (-9999 -8888 -6666 -5555=.)
+recode PRDAY10 (-9999 -8888 -6666 -5555=.)
+recode PRDAY11 (-9999 -8888 -6666 -5555=.)
+recode PRDAY12 (-9999 -8888 -6666 -5555=.)
+recode PRDAY13 (-9999 -8888 -6666 -5555=.)
+recode PRDAY14 (-9999 -8888 -6666 -5555=.)
+recode PRDAY15 (-9999 -8888 -6666 -5555=.)
+recode PRDAY16 (-9999 -8888 -6666 -5555=.)
+recode PRDAY17 (-9999 -8888 -6666 -5555=.)
+recode PRDAY18 (-9999 -8888 -6666 -5555=.)
+recode PRDAY19 (-9999 -8888 -6666 -5555=.)
+recode PRDAY20 (-9999 -8888 -6666 -5555=.)
+recode PRDAY21 (-9999 -8888 -6666 -5555=.)
+recode PRDAY22 (-9999 -8888 -6666 -5555=.)
+recode PRDAY23 (-9999 -8888 -6666 -5555=.)
+recode PRDAY24 (-9999 -8888 -6666 -5555=.)
+recode PRDAY25 (-9999 -8888 -6666 -5555=.)
+recode PRDAY26 (-9999 -8888 -6666 -5555=.)
+recode PRDAY27 (-9999 -8888 -6666 -5555=.)
+recode PRDAY28 (-9999 -8888 -6666 -5555=.)
+recode PRDAY29 (-9999 -8888 -6666 -5555=.)
+recode PRDAY30 (-9999 -8888 -6666 -5555=.)
+recode PRDAY31 (-9999 -8888 -6666 -5555=.)
+recode PROCTYPE (-99 -88 -66 -55=.)
+recode PRVER (-99 -88 -66 -55=.)
+recode PSTCO2 (-9999 -8888 -6666 -5555=.)
+recode RACE (-9 -8 -6 -5=.)
+recode SERVICELINE (-9 -8 -6 -5=.)
+recode TOTCHG (-999999999 -888888888 -666666666 -555555555=.)
+recode TOTCHG_X (-99999999999.99 -88888888888.88 -66666666666.66 -55555555555.55=.)
+recode TRAN_IN (-9 -8 -6 -5=.)
+recode TRAN_OUT (-9 -8 -6 -5=.)
+recode VisitLink (-99999999 -88888888 -66666666 -55555555=.)
+recode ZIPINC_QRTL (-99 -88 -66 -55=.)
+recode EDYEAR (-999 -888 -666 -555=.)
+recode PRYEAR1 (-999 -888 -666 -555=.)
+recode PRYEAR2 (-999 -888 -666 -555=.)
+recode PRYEAR3 (-999 -888 -666 -555=.)
+recode PRYEAR4 (-999 -888 -666 -555=.)
+recode PRYEAR5 (-999 -888 -666 -555=.)
+recode PRYEAR6 (-999 -888 -666 -555=.)
+recode PRYEAR7 (-999 -888 -666 -555=.)
+recode PRYEAR8 (-999 -888 -666 -555=.)
+recode PRYEAR9 (-999 -888 -666 -555=.)
+recode PRYEAR10 (-999 -888 -666 -555=.)
+recode PRYEAR11 (-999 -888 -666 -555=.)
+recode PRYEAR12 (-999 -888 -666 -555=.)
+recode PRYEAR13 (-999 -888 -666 -555=.)
+recode PRYEAR14 (-999 -888 -666 -555=.)
+recode PRYEAR15 (-999 -888 -666 -555=.)
+recode PRYEAR16 (-999 -888 -666 -555=.)
+recode PRYEAR17 (-999 -888 -666 -555=.)
+recode PRYEAR18 (-999 -888 -666 -555=.)
+recode PRYEAR19 (-999 -888 -666 -555=.)
+recode PRYEAR20 (-999 -888 -666 -555=.)
+recode PRYEAR21 (-999 -888 -666 -555=.)
+recode PRYEAR22 (-999 -888 -666 -555=.)
+recode PRYEAR23 (-999 -888 -666 -555=.)
+recode PRYEAR24 (-999 -888 -666 -555=.)
+recode PRYEAR25 (-999 -888 -666 -555=.)
+recode PRYEAR26 (-999 -888 -666 -555=.)
+recode PRYEAR27 (-999 -888 -666 -555=.)
+recode PRYEAR28 (-999 -888 -666 -555=.)
+recode PRYEAR29 (-999 -888 -666 -555=.)
+recode PRYEAR30 (-999 -888 -666 -555=.)
+recode PRYEAR31 (-999 -888 -666 -555=.)
